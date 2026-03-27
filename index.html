@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Women Safety & Emergency Support</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <i class="fas fa-shield-heart"></i> SafeHer
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="safety.html">Safety Tools</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="community.html">Community</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-circle-dot" style="color:#ffd166"></i>
+        Your safety, our priority
+      </div>
+      <h1>Stay Safe.<br><span>Stay Empowered.</span></h1>
+      <p>Instant emergency alerts, safety tools, and a supportive community — all in one place for women everywhere.</p>
+      <div class="hero-actions">
+        <a href="safety.html" class="btn-hero-primary">
+          <i class="fas fa-shield-alt"></i> Explore Safety Tools
+        </a>
+        <a href="community.html" class="btn-hero-secondary">
+          <i class="fas fa-users"></i> Join Community
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS ── -->
+  <div class="stats-bar">
+    <div class="stat-item"><strong>10K+</strong><span>Women Protected</span></div>
+    <div class="stat-item"><strong>500+</strong><span>Safe Locations</span></div>
+    <div class="stat-item"><strong>24/7</strong><span>Emergency Support</span></div>
+    <div class="stat-item"><strong>50+</strong><span>Community Posts</span></div>
+  </div>
+
+  <!-- ── FEATURES ── -->
+  <div class="section">
+    <div class="section-title">
+      <h2>Everything You Need to Stay Safe</h2>
+      <p>Powerful tools designed with your safety in mind</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon icon-red"><i class="fas fa-bell"></i></div>
+        <h3>Instant SOS Alert</h3>
+        <p>One tap sends an emergency alert with your location to trusted contacts and authorities.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon icon-blue"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Nearby Help</h3>
+        <p>Find the closest police stations and hospitals in seconds, even offline.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon icon-purple"><i class="fas fa-users"></i></div>
+        <h3>Community Support</h3>
+        <p>Share experiences, tips, and support with thousands of women in our safe community.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon icon-green"><i class="fas fa-book-open"></i></div>
+        <h3>Safety Resources</h3>
+        <p>Expert articles, guides, and checklists to help you stay prepared at all times.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── HOW IT WORKS ── -->
+  <div style="background:var(--white); padding: 4rem 0;">
+    <div class="section" style="padding-top:0; padding-bottom:0;">
+      <div class="section-title">
+        <h2>How It Works</h2>
+        <p>Three simple steps to activate emergency support</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" style="text-align:center; border-top:none;">
+          <div class="icon icon-red" style="margin:0 auto 1rem;"><span style="font-weight:900;font-size:1.2rem;">1</span></div>
+          <h3>Press SOS</h3>
+          <p>Tap the red SOS button visible on every page at any time.</p>
+        </div>
+        <div class="feature-card" style="text-align:center; border-top:none;">
+          <div class="icon icon-purple" style="margin:0 auto 1rem;"><span style="font-weight:900;font-size:1.2rem;">2</span></div>
+          <h3>3-Second Countdown</h3>
+          <p>A brief countdown gives you a chance to cancel if triggered accidentally.</p>
+        </div>
+        <div class="feature-card" style="text-align:center; border-top:none;">
+          <div class="icon icon-green" style="margin:0 auto 1rem;"><span style="font-weight:900;font-size:1.2rem;">3</span></div>
+          <h3>Alert Sent</h3>
+          <p>Your emergency alert is dispatched instantly to your contacts and nearby help.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>&copy; 2026 <a href="index.html">SafeHer</a> — Women Safety &amp; Emergency Support. Built with care.</p>
+  </footer>
+
+  <!-- ── FIXED SOS BUTTON ── -->
+  <button class="sos-btn" id="sosBtn" aria-label="Send SOS Alert">
+    <i class="fas fa-exclamation-triangle"></i>
+    <span>SOS</span>
+  </button>
+
+  <!-- ── SOS MODAL ── -->
+  <div class="modal-overlay" id="sosModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <!-- State 1: Countdown -->
+    <div class="modal-box" id="stateCountdown">
+      <div class="modal-icon red"><i class="fas fa-exclamation-triangle"></i></div>
+      <h2 id="modalTitle">Sending SOS Alert</h2>
+      <p>Alert will be sent in</p>
+      <div class="countdown-ring" id="countNum">3</div>
+      <p style="margin-bottom:1.5rem; font-size:0.85rem; color:var(--gray);">Tap cancel to stop</p>
+      <button class="btn-cancel" id="sosCancelBtn">Cancel</button>
+    </div>
+    <!-- State 2: Sending -->
+    <div class="modal-box" id="stateSending" style="display:none;">
+      <div class="spinner"></div>
+      <h2>Sending Alert...</h2>
+      <p>Contacting emergency services and your trusted contacts.</p>
+    </div>
+    <!-- State 3: Success -->
+    <div class="modal-box" id="stateSuccess" style="display:none;">
+      <div class="modal-icon green"><i class="fas fa-check-circle"></i></div>
+      <h2>Alert Sent!</h2>
+      <p>Emergency services and your contacts have been notified. Help is on the way.</p>
+      <button class="btn-primary" id="sosCloseBtn">Close</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
