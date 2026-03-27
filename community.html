@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community — SafeHer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <i class="fas fa-shield-heart"></i> SafeHer
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="safety.html">Safety Tools</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="community.html" class="active">Community</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <h1><i class="fas fa-users"></i> Community</h1>
+    <p>A safe space to share, support, and empower each other</p>
+  </div>
+
+  <!-- ── COMMUNITY LAYOUT ── -->
+  <div class="section">
+    <div class="community-layout">
+
+      <!-- Feed Column -->
+      <div>
+        <!-- Post Form -->
+        <div class="post-form-card">
+          <h3><i class="fas fa-pen" style="color:var(--purple-light)"></i> Share with the Community</h3>
+          <form id="postForm" novalidate>
+            <div class="post-input-row">
+              <div class="avatar">Y</div>
+              <textarea id="postTextarea" placeholder="Share a safety tip, experience, or words of support..." rows="3"></textarea>
+            </div>
+            <div class="post-actions">
+              <button type="submit" class="btn-post">
+                <i class="fas fa-paper-plane"></i> Post
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Posts Feed -->
+        <div id="postFeed">
+
+          <div class="community-post">
+            <div class="post-header">
+              <div class="avatar" style="background:linear-gradient(135deg,#0077b6,#00b4d8)">P</div>
+              <div class="post-author">
+                <strong>Priya M.</strong>
+                <span>2 hours ago</span>
+              </div>
+            </div>
+            <p class="post-body">Always share your live location with at least one trusted person when traveling alone, especially at night. It takes 10 seconds and can make all the difference. Stay safe everyone! 💙</p>
+            <div class="post-footer">
+              <button class="btn-react" onclick="toggleLike(this)"><i class="far fa-heart"></i> 24</button>
+              <button class="btn-react"><i class="far fa-comment"></i> Reply</button>
+            </div>
+          </div>
+
+          <div class="community-post">
+            <div class="post-header">
+              <div class="avatar" style="background:linear-gradient(135deg,#2dc653,#52b788)">A</div>
+              <div class="post-author">
+                <strong>Ananya K.</strong>
+                <span>5 hours ago</span>
+              </div>
+            </div>
+            <p class="post-body">I just completed a self-defense workshop at my local community center. Highly recommend it to everyone! Knowing even basic moves gives you so much more confidence. Check if your city has free programs — many do!</p>
+            <div class="post-footer">
+              <button class="btn-react" onclick="toggleLike(this)"><i class="far fa-heart"></i> 41</button>
+              <button class="btn-react"><i class="far fa-comment"></i> Reply</button>
+            </div>
+          </div>
+
+          <div class="community-post">
+            <div class="post-header">
+              <div class="avatar" style="background:linear-gradient(135deg,#e63946,#ff6b6b)">S</div>
+              <div class="post-author">
+                <strong>Sunita R.</strong>
+                <span>Yesterday</span>
+              </div>
+            </div>
+            <p class="post-body">Reminder: The Women's Helpline number is 1091. Save it. Share it. You never know when you or someone you know might need it. Also, 112 is the national emergency number that works even without a SIM card.</p>
+            <div class="post-footer">
+              <button class="btn-react" onclick="toggleLike(this)"><i class="far fa-heart"></i> 87</button>
+              <button class="btn-react"><i class="far fa-comment"></i> Reply</button>
+            </div>
+          </div>
+
+          <div class="community-post">
+            <div class="post-header">
+              <div class="avatar" style="background:linear-gradient(135deg,#6a0572,#9d4edd)">M</div>
+              <div class="post-author">
+                <strong>Meera T.</strong>
+                <span>2 days ago</span>
+              </div>
+            </div>
+            <p class="post-body">Tip for late-night commuters: Sit near the driver or in a well-lit, populated area of the bus/metro. If something feels off, trust your gut and move. Your instincts are your first line of defense. 🛡️</p>
+            <div class="post-footer">
+              <button class="btn-react" onclick="toggleLike(this)"><i class="far fa-heart"></i> 56</button>
+              <button class="btn-react"><i class="far fa-comment"></i> Reply</button>
+            </div>
+          </div>
+
+          <div class="community-post">
+            <div class="post-header">
+              <div class="avatar" style="background:linear-gradient(135deg,#f4a261,#e76f51)">R</div>
+              <div class="post-author">
+                <strong>Ritu D.</strong>
+                <span>3 days ago</span>
+              </div>
+            </div>
+            <p class="post-body">Just wanted to say — this community has been such a source of strength for me. After a scary incident last month, reading your stories and tips helped me feel less alone. Thank you all. We're stronger together. ❤️</p>
+            <div class="post-footer">
+              <button class="btn-react" onclick="toggleLike(this)"><i class="far fa-heart"></i> 112</button>
+              <button class="btn-react"><i class="far fa-comment"></i> Reply</button>
+            </div>
+          </div>
+
+        </div><!-- /postFeed -->
+      </div>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sidebar-card">
+          <h4><i class="fas fa-fire" style="color:var(--red)"></i> Trending Topics</h4>
+          <div>
+            <span class="sidebar-tag">#NightSafety</span>
+            <span class="sidebar-tag">#SelfDefense</span>
+            <span class="sidebar-tag">#TravelTips</span>
+            <span class="sidebar-tag">#LegalRights</span>
+            <span class="sidebar-tag">#MentalHealth</span>
+            <span class="sidebar-tag">#SafeCommute</span>
+            <span class="sidebar-tag">#EmergencyPrep</span>
+            <span class="sidebar-tag">#WomenEmpowerment</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h4><i class="fas fa-phone-volume" style="color:var(--red)"></i> Emergency Numbers</h4>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
+            <li style="display:flex; justify-content:space-between; font-size:0.88rem;">
+              <span><i class="fas fa-shield-alt" style="color:#0077b6; width:16px"></i> Police</span>
+              <strong style="color:var(--red)">100</strong>
+            </li>
+            <li style="display:flex; justify-content:space-between; font-size:0.88rem;">
+              <span><i class="fas fa-ambulance" style="color:#2dc653; width:16px"></i> Ambulance</span>
+              <strong style="color:var(--red)">102</strong>
+            </li>
+            <li style="display:flex; justify-content:space-between; font-size:0.88rem;">
+              <span><i class="fas fa-venus" style="color:var(--purple-light); width:16px"></i> Women Helpline</span>
+              <strong style="color:var(--red)">1091</strong>
+            </li>
+            <li style="display:flex; justify-content:space-between; font-size:0.88rem;">
+              <span><i class="fas fa-star-of-life" style="color:var(--red); width:16px"></i> National Emergency</span>
+              <strong style="color:var(--red)">112</strong>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <h4><i class="fas fa-users" style="color:var(--purple-light)"></i> Community Stats</h4>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
+            <li style="font-size:0.88rem; display:flex; justify-content:space-between;">
+              <span>Members</span><strong>12,450</strong>
+            </li>
+            <li style="font-size:0.88rem; display:flex; justify-content:space-between;">
+              <span>Posts this week</span><strong>348</strong>
+            </li>
+            <li style="font-size:0.88rem; display:flex; justify-content:space-between;">
+              <span>Active now</span><strong style="color:#2dc653">87 online</strong>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 <a href="index.html">SafeHer</a> — Women Safety &amp; Emergency Support.</p>
+  </footer>
+
+  <!-- Fixed SOS Button -->
+  <button class="sos-btn" id="sosBtn" aria-label="Send SOS Alert">
+    <i class="fas fa-exclamation-triangle"></i>
+    <span>SOS</span>
+  </button>
+
+  <!-- SOS Modal -->
+  <div class="modal-overlay" id="sosModal" role="dialog" aria-modal="true">
+    <div class="modal-box" id="stateCountdown">
+      <div class="modal-icon red"><i class="fas fa-exclamation-triangle"></i></div>
+      <h2>Sending SOS Alert</h2>
+      <p>Alert will be sent in</p>
+      <div class="countdown-ring" id="countNum">3</div>
+      <p style="margin-bottom:1.5rem; font-size:0.85rem; color:var(--gray);">Tap cancel to stop</p>
+      <button class="btn-cancel" id="sosCancelBtn">Cancel</button>
+    </div>
+    <div class="modal-box" id="stateSending" style="display:none;">
+      <div class="spinner"></div>
+      <h2>Sending Alert...</h2>
+      <p>Contacting emergency services and your trusted contacts.</p>
+    </div>
+    <div class="modal-box" id="stateSuccess" style="display:none;">
+      <div class="modal-icon green"><i class="fas fa-check-circle"></i></div>
+      <h2>Alert Sent!</h2>
+      <p>Emergency services and your contacts have been notified. Help is on the way.</p>
+      <button class="btn-primary" id="sosCloseBtn">Close</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
