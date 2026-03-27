@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safety Tools — SafeHer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <i class="fas fa-shield-heart"></i> SafeHer
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="safety.html" class="active">Safety Tools</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="community.html">Community</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <h1><i class="fas fa-shield-alt"></i> Safety Tools</h1>
+    <p>Your personal safety toolkit — checklists, nearby help, and incident reporting</p>
+  </div>
+
+  <!-- ── MAIN CONTENT ── -->
+  <div class="section">
+
+    <!-- Emergency Checklist -->
+    <div class="checklist-card">
+      <h3><i class="fas fa-clipboard-check" style="color:var(--red)"></i> Emergency Preparedness Checklist</h3>
+      <ul class="checklist">
+        <li><input type="checkbox" id="c1"><label for="c1">Save emergency contacts (police, family, friends)</label></li>
+        <li><input type="checkbox" id="c2"><label for="c2">Share your live location with a trusted person</label></li>
+        <li><input type="checkbox" id="c3"><label for="c3">Keep your phone charged above 20%</label></li>
+        <li><input type="checkbox" id="c4"><label for="c4">Know the nearest police station address</label></li>
+        <li><input type="checkbox" id="c5"><label for="c5">Carry a personal safety alarm or whistle</label></li>
+        <li><input type="checkbox" id="c6"><label for="c6">Inform someone of your travel route and ETA</label></li>
+        <li><input type="checkbox" id="c7"><label for="c7">Download offline maps of your area</label></li>
+        <li><input type="checkbox" id="c8"><label for="c8">Know the national women's helpline number (1091)</label></li>
+      </ul>
+    </div>
+
+    <!-- Nearby Police Stations -->
+    <div class="section-title" style="text-align:left; margin-bottom:1rem;">
+      <h2 style="font-size:1.4rem;"><i class="fas fa-building-shield" style="color:#0077b6; margin-right:0.5rem;"></i>Nearby Police Stations</h2>
+    </div>
+    <div class="location-cards">
+      <div class="location-card">
+        <div class="lc-header">
+          <div class="lc-icon police"><i class="fas fa-shield-alt"></i></div>
+          <div>
+            <h4>Central Police Station</h4>
+            <span class="distance"><i class="fas fa-location-dot"></i> 0.8 km away</span>
+          </div>
+        </div>
+        <p class="address"><i class="fas fa-map-pin"></i> 12 MG Road, City Center</p>
+        <p class="phone"><i class="fas fa-phone"></i> 100 / +91-11-2345-6789</p>
+        <button class="btn-directions"><i class="fas fa-directions"></i> Get Directions</button>
+      </div>
+      <div class="location-card">
+        <div class="lc-header">
+          <div class="lc-icon police"><i class="fas fa-shield-alt"></i></div>
+          <div>
+            <h4>Women's Police Station</h4>
+            <span class="distance"><i class="fas fa-location-dot"></i> 1.4 km away</span>
+          </div>
+        </div>
+        <p class="address"><i class="fas fa-map-pin"></i> 5 Park Street, Sector 4</p>
+        <p class="phone"><i class="fas fa-phone"></i> 1091 / +91-11-9876-5432</p>
+        <button class="btn-directions"><i class="fas fa-directions"></i> Get Directions</button>
+      </div>
+      <div class="location-card">
+        <div class="lc-header">
+          <div class="lc-icon police"><i class="fas fa-shield-alt"></i></div>
+          <div>
+            <h4>North District Station</h4>
+            <span class="distance"><i class="fas fa-location-dot"></i> 2.1 km away</span>
+          </div>
+        </div>
+        <p class="address"><i class="fas fa-map-pin"></i> 88 North Avenue, Block B</p>
+        <p class="phone"><i class="fas fa-phone"></i> 100 / +91-11-1122-3344</p>
+        <button class="btn-directions"><i class="fas fa-directions"></i> Get Directions</button>
+      </div>
+    </div>
+
+    <!-- Nearby Hospitals -->
+    <div class="section-title" style="text-align:left; margin-bottom:1rem; margin-top:1rem;">
+      <h2 style="font-size:1.4rem;"><i class="fas fa-hospital" style="color:#2dc653; margin-right:0.5rem;"></i>Nearby Hospitals</h2>
+    </div>
+    <div class="location-cards">
+      <div class="location-card">
+        <div class="lc-header">
+          <div class="lc-icon hospital"><i class="fas fa-hospital-alt"></i></div>
+          <div>
+            <h4>City General Hospital</h4>
+            <span class="distance"><i class="fas fa-location-dot"></i> 1.1 km away</span>
+          </div>
+        </div>
+        <p class="address"><i class="fas fa-map-pin"></i> 45 Hospital Road, Main City</p>
+        <p class="phone"><i class="fas fa-phone"></i> 102 / +91-11-5566-7788</p>
+        <button class="btn-directions"><i class="fas fa-directions"></i> Get Directions</button>
+      </div>
+      <div class="location-card">
+        <div class="lc-header">
+          <div class="lc-icon hospital"><i class="fas fa-hospital-alt"></i></div>
+          <div>
+            <h4>Women & Child Care Centre</h4>
+            <span class="distance"><i class="fas fa-location-dot"></i> 1.8 km away</span>
+          </div>
+        </div>
+        <p class="address"><i class="fas fa-map-pin"></i> 22 Wellness Lane, Sector 7</p>
+        <p class="phone"><i class="fas fa-phone"></i> +91-11-4455-6677</p>
+        <button class="btn-directions"><i class="fas fa-directions"></i> Get Directions</button>
+      </div>
+      <div class="location-card">
+        <div class="lc-header">
+          <div class="lc-icon hospital"><i class="fas fa-hospital-alt"></i></div>
+          <div>
+            <h4>Emergency Medical Centre</h4>
+            <span class="distance"><i class="fas fa-location-dot"></i> 2.5 km away</span>
+          </div>
+        </div>
+        <p class="address"><i class="fas fa-map-pin"></i> 9 Relief Road, East Block</p>
+        <p class="phone"><i class="fas fa-phone"></i> 108 / +91-11-9900-1122</p>
+        <button class="btn-directions"><i class="fas fa-directions"></i> Get Directions</button>
+      </div>
+    </div>
+
+    <!-- Report Unsafe Location Form -->
+    <div class="report-form-card">
+      <h3><i class="fas fa-triangle-exclamation" style="color:var(--red)"></i> Report an Unsafe Location</h3>
+      <form id="reportForm" novalidate>
+        <div class="form-group">
+          <label for="reportLocation">Location / Address <span style="color:var(--red)">*</span></label>
+          <input type="text" id="reportLocation" placeholder="e.g. Near Central Park, MG Road" required />
+          <span class="form-error">Please enter a location.</span>
+        </div>
+        <div class="form-group">
+          <label for="reportType">Incident Type <span style="color:var(--red)">*</span></label>
+          <select id="reportType" required>
+            <option value="">Select incident type</option>
+            <option>Harassment</option>
+            <option>Poor Lighting / Unsafe Area</option>
+            <option>Suspicious Activity</option>
+            <option>Stalking</option>
+            <option>Other</option>
+          </select>
+          <span class="form-error">Please select an incident type.</span>
+        </div>
+        <div class="form-group">
+          <label for="reportDesc">Description <span style="color:var(--red)">*</span></label>
+          <textarea id="reportDesc" placeholder="Describe what happened or why this location feels unsafe..." required></textarea>
+          <span class="form-error">Please provide a description.</span>
+        </div>
+        <div class="form-group">
+          <label for="reportTime">Date &amp; Time of Incident</label>
+          <input type="datetime-local" id="reportTime" />
+        </div>
+        <button type="submit" class="btn-primary">
+          <i class="fas fa-paper-plane"></i> Submit Report
+        </button>
+      </form>
+    </div>
+
+  </div><!-- /section -->
+
+  <footer>
+    <p>&copy; 2026 <a href="index.html">SafeHer</a> — Women Safety &amp; Emergency Support.</p>
+  </footer>
+
+  <!-- Fixed SOS Button -->
+  <button class="sos-btn" id="sosBtn" aria-label="Send SOS Alert">
+    <i class="fas fa-exclamation-triangle"></i>
+    <span>SOS</span>
+  </button>
+
+  <!-- SOS Modal -->
+  <div class="modal-overlay" id="sosModal" role="dialog" aria-modal="true">
+    <div class="modal-box" id="stateCountdown">
+      <div class="modal-icon red"><i class="fas fa-exclamation-triangle"></i></div>
+      <h2>Sending SOS Alert</h2>
+      <p>Alert will be sent in</p>
+      <div class="countdown-ring" id="countNum">3</div>
+      <p style="margin-bottom:1.5rem; font-size:0.85rem; color:var(--gray);">Tap cancel to stop</p>
+      <button class="btn-cancel" id="sosCancelBtn">Cancel</button>
+    </div>
+    <div class="modal-box" id="stateSending" style="display:none;">
+      <div class="spinner"></div>
+      <h2>Sending Alert...</h2>
+      <p>Contacting emergency services and your trusted contacts.</p>
+    </div>
+    <div class="modal-box" id="stateSuccess" style="display:none;">
+      <div class="modal-icon green"><i class="fas fa-check-circle"></i></div>
+      <h2>Alert Sent!</h2>
+      <p>Emergency services and your contacts have been notified. Help is on the way.</p>
+      <button class="btn-primary" id="sosCloseBtn">Close</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
